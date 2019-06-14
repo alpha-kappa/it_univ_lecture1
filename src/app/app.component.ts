@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'lecture1';
+  title = 'lecture3';
+  isFormsVisible = true;
+
+  toggleForms() {
+    this.isFormsVisible = !this.isFormsVisible;
+  }
 }

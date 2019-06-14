@@ -1,0 +1,17 @@
+<div>
+  test-prime works!
+  <p-dropdown [options]="cities" [(ngModel)]="selectedCity" optionLabel="name"></p-dropdown>
+
+  <span class="ui-float-label">
+    <input id="float-input" type="text" size="30" pInputText>
+    <label for="float-input">Username</label>
+  </span>
+
+  <p-menu #menu [popup]="true" [model]="items"></p-menu>
+  <button type="button" pButton icon="fa fa-fw fa-list" label="Show" (click)="menu.toggle($event)">menu</button>
+
+  <p-toast></p-toast>
+  <button (click)="addSingle()">one</button>
+  <button (click)="addMultiple()">multi</button>
+  <button (click)="clear()">reset</button>
+</div>

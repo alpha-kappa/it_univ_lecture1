@@ -1,0 +1,24 @@
+<div>
+  test-material works!
+  <mat-toolbar color="warn">
+    <mat-toolbar-row class="aaa">
+      <span>Third Line</span>
+      <span class="example-spacer"></span>
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+      <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div>[<mat-slider class="my-slider" [min]="1" [max]="5" [step]="0.5" [value]="1.5" (change)="log($event)"></mat-slider>]</div>
+  <div>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Date AFTER">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field class="my-colors">
+      <input matInput [matDatepicker]="picker2" placeholder="Date BEFORE" color="accent">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker class="my-colors2" #picker2 color="accent"></mat-datepicker>
+    </mat-form-field>
+  </div>
+</div>

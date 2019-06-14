@@ -1,0 +1,24 @@
+<div class="calc">
+    <h3>calculator</h3>
+    <div>result: {{this.result}}</div>
+
+
+    <app-tablo [operands]="opnds" [action]="act"></app-tablo>
+    <div class="ui-g">
+        <div class="ui-g-8">
+            <app-button label="1" (act)="setOp($event)"></app-button>
+            <app-button label="2" (act)="setOp($event)"></app-button>
+            <br>
+            <app-button label="3" (act)="setOp($event)"></app-button>
+            <app-button label="4" (act)="setOp($event)"></app-button>
+        </div>
+        <div class="ui-g-4">
+            <app-button label="+" (act)="setAct($event)"></app-button>
+            <app-button label="-" (act)="setAct($event)"></app-button>
+        </div>
+    </div>
+
+
+    <app-button label="=" (act)="calc()"></app-button>
+    <app-button label="clear" (act)="clear()"></app-button>
+</div>

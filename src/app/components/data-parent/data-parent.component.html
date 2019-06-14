@@ -1,0 +1,15 @@
+<div class="parent">
+  from parent to child: <input type="text" placeholder="Text" [(ngModel)]="childTitle">
+
+  <div class="bool">TEXT FROM CHILD: {{childText}}</div>
+
+  <app-data-child
+    [title]="childTitle"
+    (textToParent)="getTextFromChild($event)"
+  >
+    2222
+    <span data-span="">1111</span>
+    <span data-span2="">adsafas</span>
+    333
+  </app-data-child>
+</div>

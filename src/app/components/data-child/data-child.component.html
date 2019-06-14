@@ -1,0 +1,8 @@
+<div class="child">
+  <h2 class="bool">CHILD TITLE: {{title || 'Child'}}</h2>
+  <ng-content></ng-content>
+  <<<<ng-content select="[data-span]"></ng-content>>>>
+  <input type="text" placeholder="Text" [(ngModel)]="childText">
+  <input type="button" value="pass text" (click)="passTextToParent()">
+  >>><ng-content select="[data-span2]"></ng-content><<<
+</div>
